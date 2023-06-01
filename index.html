@@ -15,40 +15,65 @@
   <body>
     <!-- Page header -->
     <header class="global-header">
-      <div class="container">
-        <div class="header-left-container">
+      <div class="container container--global-header">
+        <div class="global-header__logo-and-navigation">
           <!-- Logo -->
-          <div class="header-logo">
-            <svg class="icon">
+          <div class="logo logo--global-header">
+            <svg>
               <use href="images/symbol-defs.svg#icon-logo-header"></use>
             </svg>
           </div>
 
           <!-- Navigation bar-->
-          <div class="header-navigation">
-            <nav>
-              <ul>
-                <li><a href="index.html" class="active"> Studio </a></li>
-                <li><a href="portofolio.html"> Portofolio </a></li>
-                <li><a href="contacts.html"> Contacts </a></li>
-              </ul>
-            </nav>
-          </div>
+          <nav class="global-header__navigation">
+            <ul class="global-header__menu">
+              <li class="global-header__menu-item">
+                <a
+                  href="index.html"
+                  class="link link--menu link--global-header link--active"
+                >
+                  Studio
+                </a>
+              </li>
+              <li class="global-header__menu-item">
+                <a
+                  href="portofolio.html"
+                  class="link link--menu link--global-header"
+                >
+                  Portofolio
+                </a>
+              </li>
+              <li class="global-header__menu-item">
+                <a
+                  href="contacts.html"
+                  class="link link--menu link--global-header"
+                >
+                  Contacts
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>
 
-        <div class="header-right-container">
-          <!-- Contacts -->
-          <ul>
-            <li>
-              <a class="icon" href="mailto:info@devstudio.com">
+        <!-- Contacts -->
+        <div class="global-header__contacts">
+          <ul class="global-header__contacts-list">
+            <li class="global-header__contacts-item">
+              <a
+                class="link link--contacts link--global-header"
+                href="mailto:info@devstudio.com"
+              >
                 <svg>
                   <use href="images/symbol-defs.svg#icon-envelope"></use>
                 </svg>
                 info@devstudio.com
               </a>
             </li>
-            <li>
-              <a class="icon" href="tel:+12127724150">
+            <li class="global-header__contacts-item">
+              <a
+                class="link link--contacts link--global-header"
+                href="tel:+12127724150"
+              >
                 <svg>
                   <use href="images/symbol-defs.svg#icon-smartphone"></use>
                 </svg>
@@ -63,102 +88,111 @@
     <!-- Main section -->
     <main>
       <!-- Title section -->
-      <section class="section title-section">
-        <div class="container">
-          <h1>EFFECTIVE SOLUTIONS FOR YOUR BUSINESS</h1>
-          <button type="button" data-modal-open class="request-service-btn">
+      <section class="section section--title-section">
+        <div class="container container--title-section">
+          <h1 class="heading--title-section">
+            EFFECTIVE SOLUTIONS FOR YOUR BUSINESS
+          </h1>
+          <button
+            type="button"
+            data-modal-open
+            class="button button--request-a-service"
+          >
             Request our service
           </button>
         </div>
       </section>
 
       <!-- Work section -->
-      <section class="section work-section">
+      <section class="section section--work-section">
         <div class="container">
-          <ul>
-            <li>
-              <div>
-                <svg class="icon">
+          <ul class="list">
+            <li class="list__item advantages-list__item">
+              <div class="advantages-list__icon">
+                <svg>
                   <use href="images/symbol-defs.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3>ATTENTION TO DETAILS</h3>
-              <p>
+              <h3 class="advantages-list__subheading">ATTENTION TO DETAILS</h3>
+              <p class="advantages-list__text">
                 We go into all the details and processes of your business to
                 develop a customized solution.
               </p>
             </li>
-            <li>
-              <div>
-                <svg class="icon">
+            <li class="list__item advantages-list__item">
+              <div class="advantages-list__icon">
+                <svg>
                   <use href="images/symbol-defs.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3>PUNCTUALITY</h3>
-              <p>
+              <h3 class="advantages-list__subheading">PUNCTUALITY</h3>
+              <p class="advantages-list__text">
                 With us, you can feel safe and secure. An important principle of
                 the company: respect your time and deadlines.
               </p>
             </li>
-            <li>
-              <div>
-                <svg class="icon">
+            <li class="list__item advantages-list__item">
+              <div class="advantages-list__icon">
+                <svg>
                   <use href="images/symbol-defs.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3>PLANNING</h3>
-              <p>
+              <h3 class="advantages-list__subheading">PLANNING</h3>
+              <p class="advantages-list__text">
                 You will be able to observe and participate in every phase of
                 solution development and implementation.
               </p>
             </li>
-            <li>
-              <div>
-                <svg class="icon">
+            <li class="list__item advantages-list__item">
+              <div class="advantages-list__icon">
+                <svg>
                   <use href="images/symbol-defs.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3>MODERN TECHNOLOGIES</h3>
-              <p>
+              <h3 class="advantages-list__subheading">MODERN TECHNOLOGIES</h3>
+              <p class="advantages-list__text">
                 We use innovative tools to solve assigned tasks. It's time to
                 simplify work processes.
               </p>
             </li>
           </ul>
 
-          <h2>What we do</h2>
-          <ul>
-            <li>
+          <h2 class="section__heading section__heading--work-section">
+            What we do
+          </h2>
+
+          <ul class="list work-list">
+            <li class="work-list__item">
               <img
                 src="images/img-work1.jpg"
                 alt="person typing code"
                 width="370"
                 height="294"
               />
-              <div class="work-img-overlay">
-                <p>DESKTOP APPS</p>
+              <div class="work-list__overlay">
+                <p class="work-list__text">DESKTOP APPS</p>
               </div>
             </li>
-            <li>
+            <li class="work-list__item">
               <img
                 src="images/img-work2.jpg"
                 alt="person working on phone app design"
                 width="370"
                 height="294"
               />
-              <div class="work-img-overlay">
-                <p>MOBILE APPS</p>
+              <div class="work-list__overlay">
+                <p class="work-list__text">MOBILE APPS</p>
               </div>
             </li>
-            <li>
+            <li class="work-list__item">
               <img
                 src="images/img-work3.jpg"
                 alt="person choosing a color scheme"
                 width="370"
                 height="294"
               />
-              <div class="work-img-overlay">
-                <p>DESIGN SOLUTIONS</p>
+              <div class="work-list__overlay">
+                <p class="work-list__text">DESIGN SOLUTIONS</p>
               </div>
             </li>
           </ul>
@@ -166,11 +200,11 @@
       </section>
 
       <!-- Team section -->
-      <section class="section team-section">
+      <section class="section section--team-section">
         <div class="container">
-          <h2>Our Team</h2>
-          <ul>
-            <li>
+          <h2 class="section__heading">Our Team</h2>
+          <ul class="list">
+            <li class="list__item list__item--team-section">
               <img
                 src="images/img-team1.jpg"
                 alt="photo of Christopher Walker"
@@ -179,9 +213,9 @@
               />
               <h3>Christopher Walker</h3>
               <p>Product Designer</p>
-              <div class="icons-list">
+              <div class="social-media-icons social-media-icons--team-section">
                 <a
-                  class="icon"
+                  class="link link--social-media link--team-section"
                   href="https://instagram.com"
                   aria-label="Instagram"
                   target="_blank"
@@ -192,7 +226,7 @@
                   </svg>
                 </a>
                 <a
-                  class="icon"
+                  class="link link--social-media link--team-section"
                   href="https://twitter.com"
                   aria-label="Twitter"
                   target="_blank"
@@ -203,7 +237,7 @@
                   </svg>
                 </a>
                 <a
-                  class="icon"
+                  class="link link--social-media link--team-section"
                   href="https://facebook.com"
                   aria-label="Facebook"
                   target="_blank"
@@ -214,7 +248,7 @@
                   </svg>
                 </a>
                 <a
-                  class="icon"
+                  class="link link--social-media link--team-section"
                   href="https://linkedin.com"
                   aria-label="LinkedIn"
                   target="_blank"
@@ -226,7 +260,7 @@
                 </a>
               </div>
             </li>
-            <li>
+            <li class="list__item list__item--team-section">
               <img
                 src="images/img-team2.jpg"
                 alt="photo of Kylie Evans"
@@ -235,9 +269,9 @@
               />
               <h3>Kylie Evans</h3>
               <p>Frontend Developer</p>
-              <div class="icons-list">
+              <div class="social-media-icons social-media-icons--team-section">
                 <a
-                  class="icon"
+                  class="link link--social-media link--team-section"
                   href="https://instagram.com"
                   aria-label="Instagram"
                   target="_blank"
@@ -248,7 +282,7 @@
                   </svg>
                 </a>
                 <a
-                  class="icon"
+                  class="link link--social-media link--team-section"
                   href="https://twitter.com"
                   aria-label="Twitter"
                   target="_blank"
@@ -259,7 +293,7 @@
                   </svg>
                 </a>
                 <a
-                  class="icon"
+                  class="link link--social-media link--team-section"
                   href="https://facebook.com"
                   aria-label="Facebook"
                   target="_blank"
@@ -270,7 +304,7 @@
                   </svg>
                 </a>
                 <a
-                  class="icon"
+                  class="link link--social-media link--team-section"
                   href="https://linkedin.com"
                   aria-label="LinkedIn"
                   target="_blank"
@@ -282,7 +316,7 @@
                 </a>
               </div>
             </li>
-            <li>
+            <li class="list__item list__item--team-section">
               <img
                 src="images/img-team3.jpg"
                 alt="photo of Ryan Harris"
@@ -291,9 +325,9 @@
               />
               <h3>Ryan Harris</h3>
               <p>Marketing</p>
-              <div class="icons-list">
+              <div class="social-media-icons social-media-icons--team-section">
                 <a
-                  class="icon"
+                  class="link link--social-media link--team-section"
                   href="https://instagram.com"
                   aria-label="Instagram"
                   target="_blank"
@@ -304,7 +338,7 @@
                   </svg>
                 </a>
                 <a
-                  class="icon"
+                  class="link--social-media link--team-section"
                   href="https://twitter.com"
                   aria-label="Twitter"
                   target="_blank"
@@ -315,7 +349,7 @@
                   </svg>
                 </a>
                 <a
-                  class="icon"
+                  class="link link--social-media link--team-section"
                   href="https://facebook.com"
                   aria-label="Facebook"
                   target="_blank"
@@ -326,7 +360,7 @@
                   </svg>
                 </a>
                 <a
-                  class="icon"
+                  class="link link--social-media link--team-section"
                   href="https://linkedin.com"
                   aria-label="LinkedIn"
                   target="_blank"
@@ -338,7 +372,7 @@
                 </a>
               </div>
             </li>
-            <li>
+            <li class="list__item list__item--team-section">
               <img
                 src="images/img-team4.jpg"
                 alt="photo of Tyler Moore"
@@ -347,9 +381,9 @@
               />
               <h3>Tyler Moore</h3>
               <p>UI Designer</p>
-              <div class="icons-list">
+              <div class="social-media-icons social-media-icons--team-section">
                 <a
-                  class="icon"
+                  class="link link--social-media link--team-section"
                   href="https://instagram.com"
                   aria-label="Instagram"
                   target="_blank"
@@ -360,7 +394,7 @@
                   </svg>
                 </a>
                 <a
-                  class="icon"
+                  class="link link--social-media link--team-section"
                   href="https://twitter.com"
                   aria-label="Twitter"
                   target="_blank"
@@ -371,7 +405,7 @@
                   </svg>
                 </a>
                 <a
-                  class="icon"
+                  class="link link--social-media link--team-section"
                   href="https://facebook.com"
                   aria-label="Facebook"
                   target="_blank"
@@ -382,7 +416,7 @@
                   </svg>
                 </a>
                 <a
-                  class="icon"
+                  class="link link--social-media link--team-section"
                   href="https://linkedin.com"
                   aria-label="LinkedIn"
                   target="_blank"
@@ -399,47 +433,47 @@
       </section>
 
       <!-- Customer section -->
-      <section class="section customer-section">
-        <div class="container">
-          <h2>Regular Customers</h2>
-          <ul>
-            <li>
-              <a class="icon" href="">
+      <section class="section section--customer-section">
+        <div class="container container--customer-section">
+          <h2 class="section__heading">Regular Customers</h2>
+          <ul class="list">
+            <li class="list__item">
+              <a class="link link--customer-section" href="">
                 <svg>
                   <use href="images/symbol-defs.svg#icon-customer-logo-1"></use>
                 </svg>
               </a>
             </li>
-            <li>
-              <a class="icon" href="">
+            <li class="list__item">
+              <a class="link link--customer-section" href="">
                 <svg>
                   <use href="images/symbol-defs.svg#icon-customer-logo-2"></use>
                 </svg>
               </a>
             </li>
-            <li>
-              <a class="icon" href="">
+            <li class="list__item">
+              <a class="link link--customer-section" href="">
                 <svg>
                   <use href="images/symbol-defs.svg#icon-customer-logo-3"></use>
                 </svg>
               </a>
             </li>
-            <li>
-              <a class="icon" href="">
+            <li class="list__item">
+              <a class="link link--customer-section" href="">
                 <svg>
                   <use href="images/symbol-defs.svg#icon-customer-logo-4"></use>
                 </svg>
               </a>
             </li>
-            <li>
-              <a class="icon" href="">
+            <li class="list__item">
+              <a class="link link--customer-section" href="">
                 <svg>
                   <use href="images/symbol-defs.svg#icon-customer-logo-5"></use>
                 </svg>
               </a>
             </li>
-            <li>
-              <a class="icon" href="">
+            <li class="list__item">
+              <a class="link link--customer-section" href="">
                 <svg>
                   <use href="images/symbol-defs.svg#icon-customer-logo-6"></use>
                 </svg>
@@ -452,35 +486,36 @@
 
     <!-- Page footer -->
     <footer class="global-footer">
-      <div class="container">
-        <div class="footer-address">
-          <!-- Logo -->
-          <div class="footer-logo">
-            <svg class="icon">
+      <div class="container container--global-footer">
+        <!-- Logo and address -->
+        <div class="global-footer__column">
+          <div class="logo logo--global-footer">
+            <svg>
               <use href="images/symbol-defs.svg#icon-logo-footer"></use>
             </svg>
           </div>
 
-          <!-- Address info -->
-          <address>
-            <p>695 Park Ave, NY 10065, USA</p>
+          <address class="global-footer__contacts">
             <ul>
-              <li>
-                <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+              <li class="global-footer__contacts-item">695 Park Ave, NY 10065, USA</li>
+              <li class="global-footer__contacts-item">
+                <a href="mailto:info@devstudio.com" class="global-footer__contacts-link">info@devstudio.com</a>
               </li>
-              <li><a href="tel:2127724150"> 212-772-4150</a></li>
+              <li class="global-footer__contacts-item">
+                <a href="tel:2127724150" class="global-footer__contacts-link"> 212-772-4150</a>
+              </li>
             </ul>
           </address>
         </div>
 
-        <div class="footer-media">
-          <h3>FIND US ON</h3>
-          <!-- Social media icons -->
-          <ul class="icons-list">
+        <!-- Social media icons -->
+        <div class="global-footer__column">
+          <h3 class="global-footer__subheading">FIND US ON</h3>
+          <ul class="social-media-icons social-media-icons--global-footer">
             <li>
               <a
+                class="link--social-media link--global-footer"
                 href="https://youtube.com"
-                class="icon"
                 target="_blank"
                 rel="nofollow noopener noreferrer"
               >
@@ -491,8 +526,8 @@
             </li>
             <li>
               <a
+                class="link--social-media link--global-footer"
                 href="https://twitter.com"
-                class="icon"
                 target="_blank"
                 rel="nofollow noopener noreferrer"
               >
@@ -503,8 +538,8 @@
             </li>
             <li>
               <a
+                class="link--social-media link--global-footer"
                 href="https://facebook.com"
-                class="icon"
                 target="_blank"
                 rel="nofollow noopener noreferrer"
               >
@@ -515,8 +550,8 @@
             </li>
             <li>
               <a
+                class="link--social-media link--global-footer"
                 href="https://linkedin.com"
-                class="icon"
                 target="_blank"
                 rel="nofollow noopener noreferrer"
               >
@@ -527,80 +562,96 @@
             </li>
           </ul>
         </div>
+
+        <!-- Footer-subscribe -->
+        <div class="footer-subscribe">
+          <h3 class="global-footer__subheading">SUBSCRIBE TO THE NEWSLETTER</p>
+          <input
+            placeholder="E-mail"
+            class="global-footer__input"
+            type="email"
+            name="username"
+            required
+          />
+          <button type="button" class="button button--subscribe">
+            Subscribe
+            <svg><use href="images/symbol-defs.svg#icon-subscribe"></use></svg>
+          </button>
+        </div>
       </div>
     </footer>
 
     <!-- Modal window -->
-    <div data-modal class="modal is-hidden">
-      <div class="modal-content">
-        <button type="button" data-modal-close class="modal-close">
+    <div data-modal class="modal modal--is-hidden">
+      <div class="modal__content">
+        <button type="button" data-modal-close class="button--modal-close">
           &times;
         </button>
 
-        <h2>Leave your information and we'll call you back</h2>
+        <h2 class="modal__heading">Leave your information and we'll call you back</h2>
 
-        <form class="form" name="book-a-service" autocomplete="off">
-          <div class="form-row">
-            <label class="form-group">
-              <p class="label-text">Name</p>
+        <form class="form" name="contact-form" autocomplete="off">
+          <div class="form__row">
+            <label class="form__group">
+              <p class="form__label-text">Name</p>
               <input
-                class="input input-text"
+                class="form__input form__input--text"
                 type="text"
                 name="username"
                 required
               />
-              <svg class="form-icon">
+              <svg class="form__icon">
                 <use href="images/symbol-defs.svg#icon-form-phone"></use>
               </svg>
             </label>
           </div>
 
-          <div class="form-row">
-            <label class="form-group">
-              <p class="label-text">Telephone</p>
+          <div class="form__row">
+            <label class="form__group">
+              <p class="form__label-text">Telephone</p>
               <input
-                class="input input-telephone"
+                class="form__input form__input-telephone"
                 type="tel"
                 name="telephone"
                 required
               />
-              <svg class="form-icon">
+              <svg class="form__icon">
                 <use href="images/symbol-defs.svg#icon-form-person"></use>
               </svg>
             </label>
           </div>
 
-          <div class="form-row">
-            <label class="form-group">
-              <p class="label-text">Email</p>
+          <div class="form__row">
+            <label class="form__group">
+              <p class="form__label-text">Email</p>
               <input
-                class="input input-email"
+                class="form__input form__input--email"
                 type="email"
                 name="email"
                 required
               />
-              <svg class="form-icon">
+              <svg class="form__icon">
                 <use href="images/symbol-defs.svg#icon-form-mail"></use>
               </svg>
             </label>
           </div>
 
-          <div class="form-row">
-            <label class="form-group">
-              <p class="label-text">Comments</p>
+          <div class="form__row">
+            <label class="form__group">
+              <p class="form__label-text">Comments</p>
               <textarea
                 placeholder="Enter the text"
-                class="input input-comments"
+                class="form__input form__input--comments"
                 name="message"
                 rows="3"
               ></textarea>
             </label>
           </div>
 
-          <div class="form-row form-terms">
-            <label class="form-group form-terms">
+          <div class="form__row form__row--terms">
+            <label class="form__group">
               <input type="checkbox" name="terms" value="text" required />
-              <span>
+              <span class="form__label-text--terms">
                 I agree with the letter and accept the
                 <a href="">Terms and Conditions</a></span
               >
@@ -608,7 +659,7 @@
           </div>
         </form>
 
-        <button type="submit" class="form-send-btn">Send</button>
+        <button type="submit" class="button button--form">Send</button>
       </div>
     </div>
 
