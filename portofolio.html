@@ -10,7 +10,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/styles_portofolio.css" />
+    <link rel="stylesheet" href="css/main.min.css" />
   </head>
   <body>
     <!-- Page header -->
@@ -63,7 +63,7 @@
                 class="link link--contacts link--global-header"
                 href="mailto:info@devstudio.com"
               >
-                <svg>
+                <svg class="icon--contacts icon--email">
                   <use href="images/symbol-defs.svg#icon-envelope"></use>
                 </svg>
                 info@devstudio.com
@@ -74,7 +74,7 @@
                 class="link link--contacts link--global-header"
                 href="tel:+12127724150"
               >
-                <svg>
+                <svg class="icon--contacts icon--phone">
                   <use href="images/symbol-defs.svg#icon-smartphone"></use>
                 </svg>
                 +1 212-772-4150
@@ -88,32 +88,32 @@
     <!-- Main section -->
     <main>
       <!-- Portofolio -->
-      <section class="section section--portofolio-section">
+      <section class="section portofolio-section">
         <div class="container">
           <!-- Filter buttons -->
-          <div class="filter-buttons">
-            <ul class="filter-buttons-list">
+          <div>
+            <ul class="portofolio-section__filter-button-list list">
               <li>
-                <button type="button" class="button button--filter">All</button>
+                <button type="button" class="portofolio-section__filter-button portofolio-section__filter-button--active">All</button>
               </li>
               <li>
-                <button type="button" class="button button--filter">Web-sites</button>
+                <button type="button" class="portofolio-section__filter-button">Web-sites</button>
               </li>
               <li>
-                <button type="button" class="button button--filter">Apps</button>
+                <button type="button" class="portofolio-section__filter-button">Apps</button>
               </li>
               <li>
-                <button type="button" class="button button--filter">Design</button>
+                <button type="button" class="portofolio-section__filter-button">Design</button>
               </li>
               <li>
-                <button type="button" class="button button--filter">Marketing</button>
+                <button type="button" class="portofolio-section__filter-button">Marketing</button>
               </li>
             </ul>
           </div>
 
           <!-- Products -->
           <div class="products">
-            <ul class="products__list">
+            <ul class="products__list list">
               <li class="products__item">
                 <div class="products__image">
                   <img
@@ -285,54 +285,54 @@
           </address>
         </div>
 
-        <!-- Social media -->
+        <!-- Social media icons -->
         <div class="global-footer__column">
           <h3 class="global-footer__subheading">FIND US ON</h3>
-          <ul class="social-media-icons social-media-icons--global-footer">
+          <ul class="social-icon-list social-icon-list--global-footer">
             <li>
               <a
-                class="link--global-footer"
+                class="link link--social link--global-footer"
                 href="https://youtube.com"
                 target="_blank"
                 rel="nofollow noopener noreferrer"
               >
-                <svg>
+                <svg class="icon--social">
                   <use href="images/symbol-defs.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li>
               <a
-                class="link--global-footer"
+                class="link link--social link--global-footer"
                 href="https://twitter.com"
                 target="_blank"
                 rel="nofollow noopener noreferrer"
               >
-                <svg>
+                <svg class="icon--social">
                   <use href="images/symbol-defs.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li>
               <a
-                class="link--global-footer"
+                class="link link--social link--global-footer"
                 href="https://facebook.com"
                 target="_blank"
                 rel="nofollow noopener noreferrer"
               >
-                <svg>
+                <svg class="icon--social">
                   <use href="images/symbol-defs.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li>
               <a
-                class="link--social-media link--global-footer"
+                class="link link--social link--global-footer"
                 href="https://linkedin.com"
                 target="_blank"
                 rel="nofollow noopener noreferrer"
               >
-                <svg>
+                <svg class="icon--social">
                   <use href="images/symbol-defs.svg#icon-linkedin"></use>
                 </svg>
               </a>
@@ -340,7 +340,7 @@
           </ul>
         </div>
 
-        <!-- Subscribe -->
+        <!-- Footer-subscribe -->
         <div class="footer-subscribe">
           <h3 class="global-footer__subheading">SUBSCRIBE TO THE NEWSLETTER</p>
           <input
