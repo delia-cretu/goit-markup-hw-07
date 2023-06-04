@@ -1,0 +1,36 @@
+.global-header__logo-and-navigation,
+.global-header__menu,
+.global-header__contacts-list {
+  display: flex;
+}
+
+.global-header__navigation,
+.global-header__contacts {
+  padding: 32px 0;
+}
+
+.global-header__menu-item:first-of-type {
+  margin-left: 93px;
+}
+
+.global-header__menu-item:not(:first-of-type) {
+  margin-left: 50px;
+}
+
+.global-header__contacts-item:last-of-type {
+  margin-left: 40px;
+}
+
+.icon--contacts {
+  margin-right: 10px;
+}
+
+.icon--email {
+  width: 20px;
+  height: 12px;
+}
+
+.icon--phone {
+  width: 10px;
+  height: 16px;
+}
