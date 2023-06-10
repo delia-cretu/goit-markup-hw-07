@@ -4,17 +4,31 @@
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  padding: 200px 0;
+  padding: 118px 0;
   text-align: center;
 }
 
 .hero-section__heading {
   color: #ffffff;
   font-weight: 900;
-  font-size: 44px;
+  font-size: 26px;
   letter-spacing: 0.06em;
-  line-height: 1.36;
+  line-height: 1.6;
   margin: auto;
   text-transform: uppercase;
-  width: 60%;
+  width: 70%;
+}
+
+@media screen and (min-width: $mobile-breakpoint) and (max-width: $desktop-breakpoint) {
+  .hero-section__heading {
+    width: 65%;
+  }
+}
+
+@media screen and (min-width: $desktop-breakpoint) {
+  .hero-section__heading {
+    font-size: 44px;
+    line-height: 1.36;
+    width: 60%;
+  }
 }
