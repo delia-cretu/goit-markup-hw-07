@@ -5,15 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Studio</title>
-    <script src="https://unpkg.com/feather-icons"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/main.min.css" />   
+    <!-- <script src="https://unpkg.com/feather-icons"></script> -->
   </head>
-
   <body>
     <!-- Page header -->
     <header class="global-header">
@@ -84,9 +83,13 @@
             </li>
           </ul>
         </div>
+
+        <!-- Toggle menu -->
         <button type="button" class="js-open-menu button--toggle-menu" aria-expanded="false" aria-controls="mobile-menu">
-          <i data-feather="menu" class="icon--toggle-menu"></i>
+          <!-- <i data-feather="menu" class="icon--toggle-menu"></i> -->
+          <svg class="icon--toggle-menu"><use href="images/menu.svg"></use> </svg>
         </button>
+        
         <div class="toggle-menu js-menu-container">
           <button class="js-close-menu button--close-menu">&times;</button>
 
@@ -756,8 +759,9 @@
       </div>
     </div>
 
-    <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
-    <script> feather.replace()</script>
+    <!-- <script> feather.replace()</script> -->
+    <script src="./js/modal.js"></script>
+
   </body>
 </html>
