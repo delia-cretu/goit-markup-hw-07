@@ -1,20 +1,20 @@
-// $fontFamily:  Roboto;
-// $secondaryFontFamily: Raleway;
-// $backUpFontFamily; sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
 
-$primaryBackgroundColor: #FFFFFF;
-$lightBackgroundColor: #F5F4FA;
-$darkBackgroundColor: #2F303A;
+$mobile-breakpoint: 480px;
+$tablet-breakpoint: 768px;
+$desktop-breakpoint: 1200px;
 
-$primaryColor: #212121;
-$lightColor: #FFFFFF;
-$darkColor:  #757575;
+:root {
+  --mobile-breakpoint: 480px;
+  --tablet-breakpoint: 768px;
+  --desktop-breakpoint: 1200px;
 
-$brightAccentColor: #2196F3;
-$primaryButtonFocusColor: #188CE8;
-
-$primaryRestingIconFill: #AFB1B8;
-$secondaryRestingIconFill: #FFFFFF;
-
-$noListStyle: none;
-$noTextDeco: none;
+  --color-active: #2196f3;
+  --font-family: "Roboto", sans-serif;
+  --font-size-md: 16px;
+  --font-size-sm: 14px;
+  --letter-spacing: 0.03em;
+  --text-color-body: #757575;
+  --text-color-title: #212121;
+  --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
