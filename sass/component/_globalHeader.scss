@@ -4,8 +4,8 @@
   position: relative;
 }
 
-.global-header__menu,
-.global-header__contacts-list {
+.global-header__navigation,
+.global-header__contacts {
   display: none;
 }
 
@@ -20,6 +20,7 @@
 
   .global-header__navigation,
   .global-header__contacts {
+    display: block;
     padding: 32px 0;
   }
 
