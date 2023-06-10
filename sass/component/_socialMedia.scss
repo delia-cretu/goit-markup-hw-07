@@ -11,6 +11,12 @@
   }
 }
 
+@media screen and (min-width: $desktop-breakpoint) {
+  .social-icon-list--global-footer {
+    justify-content: left;
+  }
+}
+
 .icon--social {
   height: 20px;
   width: 20px;
