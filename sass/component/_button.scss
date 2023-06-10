@@ -1,6 +1,5 @@
 .button {
   background-color: var(--color-active);
-  background-color: red;
   border: none;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -34,34 +33,46 @@
 
 .button--toggle-menu {
   background-color: #ffffff;
-  cursor: pointer;
   display: flex;
   padding: 0;
   height: 40px;
-  width: 40px;
+
   position: absolute;
-  top: 10px;
+  top: 13px;
   right: 15px;
+  width: 40px;
 }
 
 .icon--toggle-menu {
+  border: none;
   color: black;
+  height: 16px;
   text-align: center;
   width: 24px;
 }
 
-@media screen and (min-width: $mobile-breakpoint) {
-  .button--toggle {
+@media screen and (min-width: $tablet-breakpoint) {
+  .button--toggle-menu {
     display: none;
   }
 }
 
 .button--close-menu {
+  background-color: #ffffff;
+  border: none;
   height: 40px;
   position: absolute;
   right: 15px;
   top: 10px;
   width: 40px;
+}
+
+.button--toggle-menu:hover,
+.button--toggle-menu:focus,
+.button--close-menu:hover,
+.button--close-menu:focus {
+  color: var(--color-active);
+  cursor: pointer;
 }
 
 .portofolio-section__filter-button {
