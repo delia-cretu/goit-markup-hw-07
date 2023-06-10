@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/main.min.css" />   
   </head>
-  
+
   <body>
     <!-- Page header -->
     <header class="global-header">
@@ -83,9 +83,97 @@
               </a>
             </li>
           </ul>
-          <button type="button" class="button--toggle-menu">
-            <i data-feather="menu" class="icon--toggle-menu"></i>
-          </button>
+        </div>
+        <button type="button" class="js-open-menu button--toggle-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <i data-feather="menu" class="icon--toggle-menu"></i>
+        </button>
+        <div class="toggle-menu js-menu-container">
+          <button class="js-close-menu button--close-menu">&times;</button>
+
+          <ul class="toggle-menu__menu-list list">
+            <li class="toggle-menu__menu-item">
+              <a
+                href="index.html"
+                class="link link--menu link--global-header link--active"
+              >
+                Studio
+              </a>
+            </li>
+            <li class="toggle-menu__menu-item">
+              <a
+                href="portofolio.html"
+                class="link link--menu link--global-header"
+              >
+                Portofolio
+              </a>
+            </li>
+            <li class="toggle-menu__menu-item">
+              <a
+                href="contacts.html"
+                class="link link--menu link--global-header"
+              >
+                Contacts
+              </a>
+            </li>
+          </ul>
+            
+          <ul class="toggle-menu__contacts-list list">
+            <li class="toggle-menu__contacts-item toggle-menu__contacts-phone">
+              <a
+                class="link link--contacts link--global-header"
+                href="tel:+12127724150"
+              >
+                +1 212-772-4150
+              </a>
+            </li>            
+            <li class="toggle-menu__contacts-item toggle-menu__contacts-email">
+              <a
+                class="link link--contacts link--global-header"
+                href="mailto:info@devstudio.com"
+              >
+                info@devstudio.com
+              </a>
+            </li>
+
+          </ul>
+
+          <ul class="toggle-menu__social-list list">
+            <li class="toggle-menu__social-item">
+              <a class="link link--toggle-menu"
+                href="https://instagram.com"
+                target="_blank"
+                rel="nofollow noopener noreferrer">
+                Instagram
+              </a>
+              <div class="toggle-menu__vertical-line"></div>
+            </li>
+            <li class="toggle-menu__social-item">
+              <a class="link link--toggle-menu"
+                href="https://twitter.com"
+                target="_blank"
+                rel="nofollow noopener noreferrer">
+                Twitter
+              </a>
+              <div class="toggle-menu__vertical-line"></div>
+            </li>
+            <li class="toggle-menu__social-item">
+              <a class="link link--toggle-menu"
+                href="https://facebook.com"
+                target="_blank"
+                rel="nofollow noopener noreferrer">
+                Facebook
+              </a>
+              <div class="toggle-menu__vertical-line"></div>
+            </li>
+            <li class="toggle-menu__social-item">
+              <a class="link link--toggle-menu"
+                href="https://linkedin.com"
+                target="_blank"
+                rel="nofollow noopener noreferrer">
+                LinkedIn
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </header>
@@ -580,7 +668,7 @@
           />
           <button type="button" class="button button--subscribe">
             Subscribe
-            <svg><use href="images/symbol-defs.svg#icon-subscribe"></use></svg>
+            <svg class="icon--subscribe"><use href="images/symbol-defs.svg#icon-subscribe"></use></svg>
           </button>
         </div>
       </div>
@@ -669,6 +757,7 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
     <script> feather.replace()</script>
   </body>
 </html>
