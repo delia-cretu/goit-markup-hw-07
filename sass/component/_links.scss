@@ -1,10 +1,8 @@
-.link--menu,
-.link--menu:visited {
+.link--menu {
   color: var(--text-color-title);
 }
 
-.link--contacts,
-.link--contacts:visited {
+.link--contacts {
   color: var(--text-color-body);
 }
 
@@ -21,7 +19,7 @@
   &::after,
   &::after {
     position: absolute;
-    bottom: -36px;
+    bottom: -35px;
     left: 0;
     content: "";
     background-color: var(--color-active);
@@ -76,7 +74,7 @@
   height: 92px;
   transition: border-color var(--transition);
   transition: color var(--transition);
-  width: 170px;
+  min-width: 170px;
   &:hover,
   &:focus {
     border-color: var(--color-active);
