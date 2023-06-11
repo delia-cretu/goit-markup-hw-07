@@ -1,7 +1,3 @@
-.portofolio-section {
-  padding: 94px 0;
-}
-
 .products__list {
   flex-wrap: wrap;
   gap: 30px;
@@ -66,19 +62,15 @@
   margin-top: 4px;
 }
 
-.portofolio-section__filter-button-list {
+.filter-button__list {
   column-gap: 8px;
   flex-wrap: wrap;
+  justify-content: left;
   row-gap: 15px;
-  width: 60%;
 }
 
-@media screen and (min-width: &mobile-breakpoint) {
-  .portofolio-section__filter-button-list {
-    flex-wrap: nowrap;
-    border: 2px solid red;
+@media screen and (min-width: $tablet-breakpoint) {
+  .filter-button__list {
     justify-content: center;
-    row-gap: none;
-    width: 100%;
   }
 }
