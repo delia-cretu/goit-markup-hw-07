@@ -5,12 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Studio</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-    />
     <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/main.min.css" />   
+    <link rel="stylesheet" href="css/main.min.css" />
+    <script src="https://unpkg.com/feather-icons"></script>   
   </head>
   <body>
     <!-- Page header -->
@@ -84,12 +81,13 @@
         </div>
 
         <!-- Toggle menu -->
-        <button type="button" class="button--toggle-menu toggle-menu-open" aria-expanded="false" aria-controls="mobile-menu">
-          <svg class="icon--toggle-menu"><use href="images/menu.svg"></use></svg>
+        <button type="button" class="button--toggle-menu-open" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="icon--toggle-menu-open"><use href="images/menu.svg"></use></svg>
+          <!-- <i data-feather="circle" class="icon--toggle-menu-open"></i> -->
         </button>
         
         <div class="toggle-menu">
-          <button class="button--close-menu toggle-menu-close">&times;</button>
+          <button class="button--toggle-menu-close">&times;</button>
 
           <ul class="toggle-menu__navigation-list list">
             <li class="toggle-menu__navigation-item">
@@ -752,7 +750,7 @@
           <div class="form__row form__row--terms">
             <label class="form__group">
               <input type="checkbox" name="terms" value="text" required />
-              <span class="form__label-text--terms">
+              <span class="form__label-text form__label-text--terms">
                 I agree with the letter and accept the
                 <a href="">Terms and Conditions</a></span
               >
@@ -765,7 +763,7 @@
     </div>
 
     <script src="./js/mobile-menu.js"></script>
+    <script>feather.replace()</script>
     <script src="./js/modal.js"></script>
-
   </body>
 </html>
