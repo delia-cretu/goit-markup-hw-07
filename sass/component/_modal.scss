@@ -28,7 +28,13 @@
   justify-content: center;
   padding: 40px;
   position: absolute;
-  width: 528px;
+  width: 450px;
+}
+
+@media screen and (min-width: $desktop-breakpoint) {
+  .modal__content {
+    width: 528px;
+  }
 }
 
 .modal__heading {
@@ -37,26 +43,4 @@
   font-weight: 700;
   line-height: 1.15;
   text-align: center;
-}
-
-.button--modal-close {
-  align-items: center;
-  background: #ffffff;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
-  display: flex;
-  font-size: 28px;
-  height: 30px;
-  justify-content: center;
-  position: absolute;
-  right: 8px;
-  top: 8px;
-  width: 30px;
-  transition: color var(--transition);
-  &:hover,
-  &:focus {
-    background-color: var(--color-active);
-    color: #ffffff;
-    cursor: pointer;
-  }
 }
