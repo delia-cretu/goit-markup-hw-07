@@ -16,12 +16,12 @@
   line-height: 1.6;
   margin: auto;
   text-transform: uppercase;
-  width: 70%;
+  width: 80%;
 }
 
 @media screen and (min-width: $mobile-breakpoint) and (max-width: $desktop-breakpoint) {
   .hero-section__heading {
-    width: 65%;
+    width: 70%;
   }
 }
 
