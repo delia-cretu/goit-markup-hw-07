@@ -82,33 +82,37 @@
             </li>
           </ul>
         </div>
-        <button type="button" class="js-open-menu button--toggle-menu" aria-expanded="false" aria-controls="mobile-menu">
-          <i data-feather="menu" class="icon--toggle-menu"></i>
-        </button>
-        <div class="toggle-menu js-menu-container">
-          <button class="js-close-menu button--close-menu">&times;</button>
 
-          <ul class="toggle-menu__menu-list list">
-            <li class="toggle-menu__menu-item">
+        <!-- Toggle menu -->
+        <button type="button" class="button--toggle-menu-open" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="icon--toggle-menu-open"><use href="images/menu.svg"></use></svg>
+          <!-- <i data-feather="circle" class="icon--toggle-menu-open"></i> -->
+        </button>
+        
+        <div class="toggle-menu">
+          <button class="button--toggle-menu-close">&times;</button>
+
+          <ul class="toggle-menu__navigation-list list">
+            <li class="toggle-menu__navigation-item">
               <a
                 href="index.html"
-                class="link link--menu link--global-header link--active"
+                class="link link--global-header"
               >
                 Studio
               </a>
             </li>
-            <li class="toggle-menu__menu-item">
+            <li class="toggle-menu__navigation-item">
               <a
                 href="portofolio.html"
-                class="link link--menu link--global-header"
+                class="link link--global-header"
               >
                 Portofolio
               </a>
             </li>
-            <li class="toggle-menu__menu-item">
+            <li class="toggle-menu__navigation-item">
               <a
                 href="contacts.html"
-                class="link link--menu link--global-header"
+                class="link link--global-header"
               >
                 Contacts
               </a>
@@ -118,7 +122,7 @@
           <ul class="toggle-menu__contacts-list list">
             <li class="toggle-menu__contacts-item toggle-menu__contacts-phone">
               <a
-                class="link link--contacts link--global-header"
+                class="link"
                 href="tel:+12127724150"
               >
                 +1 212-772-4150
@@ -126,7 +130,7 @@
             </li>            
             <li class="toggle-menu__contacts-item toggle-menu__contacts-email">
               <a
-                class="link link--contacts link--global-header"
+                class="link"
                 href="mailto:info@devstudio.com"
               >
                 info@devstudio.com
@@ -143,8 +147,8 @@
                 rel="nofollow noopener noreferrer">
                 Instagram
               </a>
-              <div class="toggle-menu__vertical-line"></div>
             </li>
+            <li class="toggle-menu__vertical-line"></li>
             <li class="toggle-menu__social-item">
               <a class="link link--toggle-menu"
                 href="https://twitter.com"
@@ -152,8 +156,8 @@
                 rel="nofollow noopener noreferrer">
                 Twitter
               </a>
-              <div class="toggle-menu__vertical-line"></div>
             </li>
+            <li class="toggle-menu__vertical-line"></li>
             <li class="toggle-menu__social-item">
               <a class="link link--toggle-menu"
                 href="https://facebook.com"
@@ -161,8 +165,8 @@
                 rel="nofollow noopener noreferrer">
                 Facebook
               </a>
-              <div class="toggle-menu__vertical-line"></div>
             </li>
+            <li class="toggle-menu__vertical-line"></li>
             <li class="toggle-menu__social-item">
               <a class="link link--toggle-menu"
                 href="https://linkedin.com"
@@ -183,21 +187,21 @@
         <div class="container">
           <!-- Filter buttons -->
           <div>
-            <ul class="portofolio-section__filter-button-list list">
+            <ul class="filter-button__list list">
               <li>
-                <button type="button" class="portofolio-section__filter-button portofolio-section__filter-button--active">All</button>
+                <button type="button" class="filter-button__item filter-button__item--active">All</button>
               </li>
               <li>
-                <button type="button" class="portofolio-section__filter-button">Web-sites</button>
+                <button type="button" class="filter-button__item">Web-sites</button>
               </li>
               <li>
-                <button type="button" class="portofolio-section__filter-button">Apps</button>
+                <button type="button" class="filter-button__item">Apps</button>
               </li>
               <li>
-                <button type="button" class="portofolio-section__filter-button">Design</button>
+                <button type="button" class="filter-button__item">Design</button>
               </li>
               <li>
-                <button type="button" class="portofolio-section__filter-button">Marketing</button>
+                <button type="button" class="filter-button__item">Marketing</button>
               </li>
             </ul>
           </div>
